@@ -10,8 +10,8 @@ data or represent dissertation findings.
 
 ## Read the Visual
 
-Open `index.html` through a local web server or visit the GitHub Pages site after
-publication.
+Visit the live companion:
+[https://minerclass.github.io/k12-ai-evidence-arc-2024-2026/](https://minerclass.github.io/k12-ai-evidence-arc-2024-2026/)
 
 The interactive evidence area includes:
 
