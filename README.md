@@ -1,0 +1,68 @@
+# K-12 Teacher AI Evidence Arc, 2024-2026
+
+This repository presents a proposal-stage visual synthesis of three national K-12 teacher
+survey waves. It asks how the evidence moves from **instructional adoption** to
+**perceived consequences** and then to **institutional response**.
+
+The page is designed as a public research companion for dissertation Chapters 1-3. It may
+later support Chapters 4-5 joint displays, but it does not contain dissertation participant
+data or represent dissertation findings.
+
+## Read the Visual
+
+Open `index.html` through a local web server or visit the GitHub Pages site after
+publication.
+
+The interactive evidence area includes:
+
+- a three-wave overview;
+- parallel grade-band snapshots for 2024 and 2025; and
+- a 2026 task-level comparison of any guidance versus formal written guidance.
+
+## Central Interpretation
+
+The sources describe an implementation problem rather than a clean trend:
+
+- AIRS 2024 establishes a baseline of instructional AI use;
+- the Gallup-sponsored Fall 2025 ATP wave captures widespread use and an asymmetry between
+  perceived professional benefit and concern about student learning; and
+- the Gallup-sponsored Winter 2026 ATP wave shows that formal, task-specific guidance
+  remains uncommon.
+
+Survey wording, timing, denominators, and samples differ. Percentages should not be
+subtracted as if they were repeated measurements of the same construct.
+
+## Repository Structure
+
+```text
+.
+|-- analysis/
+|   |-- DISSERTATION_INTEGRATION.md
+|   `-- METHODS_AND_LIMITATIONS.md
+|-- data/
+|   `-- evidence_arc_metrics.csv
+|-- app.js
+|-- index.html
+|-- styles.css
+`-- README.md
+```
+
+## Data Boundary
+
+Only aggregated, weighted percentages and valid unweighted denominators are published here.
+Raw survey microdata are intentionally excluded.
+
+## Key Sources
+
+- [RAND: Uneven Adoption of Artificial Intelligence Tools Among U.S. Teachers and Principals](https://www.rand.org/pubs/research_reports/RRA134-25.html)
+- [RAND: 2024 AIRS technical report](https://www.rand.org/content/dam/rand/pubs/research_reports/RRA100/RRA134-24/RAND_RRA134-24.pdf)
+- [Gallup: Three in 10 Teachers Use AI Weekly, Saving Six Weeks a Year](https://news.gallup.com/poll/691967/three-teachers-weekly-saving-six-weeks-year.aspx)
+- [Gallup: Most Teachers Receive No Formal Guidance on AI Use](https://news.gallup.com/poll/710534/teachers-receive-no-formal-guidance.aspx)
+- [Gallup-Walton Family Foundation K-12 Teacher Research](https://www.gallup.com/analytics/659819/k-12-teacher-research.aspx)
+- [RAND Survey Panels Data Portal](https://rspdata.org/)
+
+## Citation Note
+
+Values in the visualization are independent public-portal analyses using `PORTAL_WEIGHT`.
+They may differ from sponsor publications that use non-public weights or different analytic
+definitions. Consult `analysis/METHODS_AND_LIMITATIONS.md` before reusing a value.
