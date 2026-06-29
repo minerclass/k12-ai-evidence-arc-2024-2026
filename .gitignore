@@ -1,4 +1,24 @@
 .DS_Store
 Thumbs.db
+desktop.ini
 *.log
 node_modules/
+
+# Raw survey microdata — NEVER commit (RAND/Gallup data-use agreement)
+# analysis/*.py expect these locally; only aggregate results may be published.
+raw/
+**/raw/
+*.dta
+*.sav
+*.por
+*ATP_Portal*.csv
+
+# Credentials
+*.env
+.env*
+*token*
+*secret*
+
+# Python
+__pycache__/
+*.pyc

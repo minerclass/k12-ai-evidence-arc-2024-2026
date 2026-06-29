@@ -122,10 +122,48 @@ function guidanceMarkup() {
   `;
 }
 
+const equityData = {
+  quality: [
+    ["Majority white students", 80.8],
+    ["Majority students of color", 71.3]
+  ],
+  instruction: [
+    ["Lower-poverty schools", 49.0],
+    ["Higher-poverty schools", 39.0]
+  ]
+};
+
+function equityMarkup() {
+  return `
+    <div class="comparison-view">
+      <p class="chart-intro">
+        Two independent datasets, collected about nine months apart with different instruments
+        and populations, point the same direction: schools serving more historically underserved
+        students report weaker AI conditions. These are context datasets beyond the three arc
+        waves. The two measures differ and are not subtracted; they are read as convergent equity
+        signals, not a single gap.
+      </p>
+      <div class="comparison-grid">
+        <section class="comparison-column">
+          <h3>High-quality AI tools available</h3>
+          <p>Gallup-sponsored RAND ATP, Spring 2025 (GAL0425T) · valid responses · 9.5-point gap</p>
+          ${equityData.quality.map(([label, value], i) => barRow(label, value, i === 1 ? "red" : "")).join("")}
+        </section>
+        <section class="comparison-column">
+          <h3>AI topics taught to students</h3>
+          <p>NCES School Pulse Panel, December 2024 · weighted school estimates · 10-point gap</p>
+          ${equityData.instruction.map(([label, value], i) => barRow(label, value, i === 1 ? "red" : "")).join("")}
+        </section>
+      </div>
+    </div>
+  `;
+}
+
 const views = {
   overview: overviewMarkup,
   grade: gradeMarkup(),
-  guidance: guidanceMarkup()
+  guidance: guidanceMarkup(),
+  equity: equityMarkup()
 };
 
 const chartPanel = document.querySelector("#chart-panel");

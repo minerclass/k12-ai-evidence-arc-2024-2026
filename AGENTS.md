@@ -18,6 +18,8 @@ This is a public, proposal-stage dissertation companion for aggregated secondary
 - Keep citations linked to primary RAND or Gallup sources.
 - Distinguish reported perceptions from measured outcomes.
 - Treat subgroup comparisons as descriptive unless a survey-design-aware analysis supports inference.
+- The equity view draws on two context datasets (Spring 2025 ATP resource survey; December 2024 NCES School Pulse Panel) beyond the three arc waves. Keep them labeled as convergent directional signals measuring different constructs, never a single subtracted gap.
+- Keep the `analysis/*.py` scripts in sync with any value shown on the page; every Gallup/ATP percentage must be reproducible from them.
 
 ## Validation
 

@@ -16,8 +16,11 @@ Visit the live companion:
 The interactive evidence area includes:
 
 - a three-wave overview;
-- parallel grade-band snapshots for 2024 and 2025; and
-- a 2026 task-level comparison of any guidance versus formal written guidance.
+- parallel grade-band snapshots for 2024 and 2025;
+- a 2026 task-level comparison of any guidance versus formal written guidance; and
+- an equity view in which two independent context datasets (Spring 2025 ATP resource survey
+  and the December 2024 NCES School Pulse Panel) show the same directional gap by school
+  composition and neighborhood poverty.
 
 ## Central Interpretation
 
@@ -38,7 +41,10 @@ subtracted as if they were repeated measurements of the same construct.
 .
 |-- analysis/
 |   |-- DISSERTATION_INTEGRATION.md
-|   `-- METHODS_AND_LIMITATIONS.md
+|   |-- METHODS_AND_LIMITATIONS.md
+|   |-- GAL0226T_weighted_descriptives.py   (reproducible: Winter 2026 estimates)
+|   |-- GAL1025T_weighted_descriptives.py   (reproducible: Fall 2025 estimates)
+|   `-- GAL0425T_weighted_descriptives.py   (reproducible: Spring 2025 equity estimates)
 |-- data/
 |   `-- evidence_arc_metrics.csv
 |-- app.js
@@ -46,6 +52,11 @@ subtracted as if they were repeated measurements of the same construct.
 |-- styles.css
 `-- README.md
 ```
+
+The `analysis/*.py` scripts recompute every Gallup/ATP value from the public-use files using
+`PORTAL_WEIGHT` (Python standard library only). They expect each wave's public CSV locally and
+do not contain any microdata. The NCES School Pulse Panel equity values are openly downloadable
+aggregate estimates.
 
 ## Data Boundary
 
@@ -59,6 +70,7 @@ Raw survey microdata are intentionally excluded.
 - [Gallup: Three in 10 Teachers Use AI Weekly, Saving Six Weeks a Year](https://news.gallup.com/poll/691967/three-teachers-weekly-saving-six-weeks-year.aspx)
 - [Gallup: Most Teachers Receive No Formal Guidance on AI Use](https://news.gallup.com/poll/710534/teachers-receive-no-formal-guidance.aspx)
 - [Gallup-Walton Family Foundation K-12 Teacher Research](https://www.gallup.com/analytics/659819/k-12-teacher-research.aspx)
+- [NCES School Pulse Panel (December 2024 technology release)](https://nces.ed.gov/surveys/spp/)
 - [RAND Survey Panels Data Portal](https://rspdata.org/)
 
 ## Citation Note
