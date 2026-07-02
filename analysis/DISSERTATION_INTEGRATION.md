@@ -9,7 +9,7 @@ The sequence should not be presented as a longitudinal trend. AIRS 2024 and the
 Gallup-sponsored 2025 and 2026 American Teacher Panel surveys were fielded at different
 times and use different questions, denominators, and analytic populations. Their value is
 conceptual and structural: together, they move from reported instructional adoption to
-perceived consequences and then to institutional guidance.
+expected teaching impacts and then to institutional guidance.
 
 ## Chapters 1-3
 
@@ -20,20 +20,23 @@ Use a reduced version of the evidence arc to establish the national context:
 - In AIRS 2024, 23.5% of teachers in the public file reported using AI for instructional
   planning or teaching.
 - In Fall 2025, 68.9% reported using AI tools during the 2025-26 school year, while 72.5%
-  said AI makes teachers' jobs easier and 61.9% said it makes students' learning harder.
+  expected teachers' AI use to make teaching easier and 61.9% expected students' AI use
+  to make teaching harder.
 - In Winter 2026, only 12.8% reported clear student AI-policy coverage; 55.3% received any
   guidance for preparing to teach, but only 9.3% received formal written guidance.
 
-These values should be used to establish a problem of rapid use, perceived pedagogical
-tension, and lagging institutional support. They should not be used as proof of a causal
+These values should be used to establish widespread use, differing expectations about how
+teachers' and students' AI use will affect teaching, and lagging institutional support. The
+2025 items do not measure student learning and should not be used as proof of a causal
 relationship.
 
 ### Chapter 2: Literature and Conceptual Framing
 
-Use the 2025 asymmetry and 2026 guidance gap as empirical context for literature addressing:
+Use the 2025 teaching-impact asymmetry and 2026 guidance gap as empirical context for
+literature addressing:
 
-- friction-reducing affordances and professional efficiency;
-- concerns about learning, authorship, and cognitive outsourcing;
+- expectations that teachers' AI use may reduce teaching workload;
+- expectations that students' AI use may increase instructional difficulty;
 - infrastructural friction created by unclear policy and informal norms; and
 - the transfer of institutional ambiguity onto individual educators.
 
@@ -75,7 +78,8 @@ differences in population and measurement.
 
 **Figure X. National K-12 teacher AI evidence arc, 2024-2026.** Weighted descriptive
 estimates from three independent public-use teacher surveys show instructional AI adoption
-in 2024, teacher judgments about professional and learning consequences in 2025, and
+in 2024, teacher expectations about how teachers' and students' AI use will affect the work
+of teaching in 2025, and
 policy-guidance conditions in 2026. Because survey questions, field periods, samples, and
 denominators differ, the sequence is interpreted as an evidence arc rather than a
 longitudinal trend. Sources: RAND AIRS (`AIR0424T`), Gallup-sponsored RAND ATP

@@ -8,7 +8,7 @@ American Educator Panels files:
 | Wave | File | Public analytic cases | Role in the evidence arc |
 | --- | --- | ---: | --- |
 | Spring 2024 | `AIR0424T` | 9,126 | Instructional AI adoption and planning |
-| Fall 2025 | `GAL1025T` | 2,012 | AI use, perceived consequences, support, and policy |
+| Fall 2025 | `GAL1025T` | 2,012 | AI use, expected teaching impacts, support, and policy |
 | Winter 2026 | `GAL0226T` | 2,069 | Policy clarity, guidance, and institutional stance |
 
 `AIR0424T` is the RAND American Instructional Resources Survey. `GAL1025T` and
@@ -29,7 +29,7 @@ estimates.
 Within-wave comparisons are the strongest:
 
 - grade-band patterns within AIRS 2024;
-- teacher-benefit and student-learning judgments within `GAL1025T`; and
+- expected teaching impacts of teachers' and students' AI use within `GAL1025T`; and
 - any versus formal guidance by task within `GAL0226T`.
 
 Across-wave juxtaposition is appropriate only as a descriptive evidence sequence.
@@ -39,9 +39,10 @@ Across-wave juxtaposition is appropriate only as a descriptive evidence sequence
 The visualization does not support claims that:
 
 - AI use increased by a precise number of percentage points from 2024 to 2025;
-- AI caused teacher efficiency or student learning difficulty;
+- AI caused changes in teaching difficulty or student learning;
 - respondents share a common definition of AI across waves;
 - policy presence demonstrates policy quality or implementation;
+- the 2025 teaching-impact items measure student learning, authorship, or cognitive outsourcing;
 - any subgroup difference is statistically significant; or
 - the surveys directly measure pedagogical friction.
 
@@ -54,7 +55,7 @@ denominators. It does not display confidence intervals or mark statistical signi
 
 ## Reproducibility and Privacy
 
-The chart-ready values are in `data/evidence_arc_metrics.csv`. The public repository does
-not contain raw respondent-level microdata. The original files, codebooks, survey
-instruments, technical documents, and analysis scripts remain in the private/local
-secondary-data archive.
+The chart-ready values are in `data/evidence_arc_metrics.csv`, and reproducible Gallup/ATP
+analysis scripts are in `analysis/`. The public repository does not contain raw
+respondent-level microdata. Public-use input files, codebooks, survey instruments, and
+technical documents remain in the private/local secondary-data archive.

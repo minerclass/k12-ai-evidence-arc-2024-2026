@@ -108,19 +108,19 @@ def main():
         n, round(p, 1) if p else None, round(se, 1) if se else None,
         "all valid policy-presence respondents")
 
-    # --- C. Perceived effect on ease/difficulty: teacher vs student ---
+    # --- C. Expected effect of teacher/student AI use on the job of teaching ---
     ed_denom = {"AI will make the job much easier", "AI will make the job somewhat easier",
                 "AI will have no effect on ease/difficulty of the job",
                 "AI will make the job somewhat harder", "AI will make the job much harder"}
     ed_easier = {"AI will make the job much easier", "AI will make the job somewhat easier"}
     ed_harder = {"AI will make the job somewhat harder", "AI will make the job much harder"}
     ed_none = {"AI will have no effect on ease/difficulty of the job"}
-    for col, who in [("AI_EASY_DIFF_TEACHER", "Teachers' job"),
-                     ("AI_EASY_DIFF_STUDENT", "Students' learning")]:
+    for col, who in [("AI_EASY_DIFF_TEACHER", "Teachers' AI use"),
+                     ("AI_EASY_DIFF_STUDENT", "Students' AI use")]:
         for hit, name in [(ed_easier, "Easier"), (ed_none, "No effect"),
                           (ed_harder, "Harder")]:
             n, p, se = wpct(rows, col, hit, ed_denom)
-            add("C. Perceived effect of AI (easier vs harder)",
+            add("C. Expected effect of AI use on the job of teaching",
                 f"{who} | {name}", n, p, se, "valid responses")
 
     # --- D. Support: personal vs school ---
@@ -165,8 +165,8 @@ def main():
              "Used AI", "GRADES_TAUGHT", grade_vals)
     subgroup("F2. AI use, by subject", "AI_USER", {"Yes"}, user_denom,
              "Used AI", "MAIN_SUBJECT", subj_vals)
-    subgroup("F3. Believes AI makes students' learning HARDER, by grade band",
-             "AI_EASY_DIFF_STUDENT", ed_harder, ed_denom, "AI makes learning harder",
+    subgroup("F3. Expects students' AI use to make teaching HARDER, by grade band",
+             "AI_EASY_DIFF_STUDENT", ed_harder, ed_denom, "Students' AI use makes teaching harder",
              "GRADES_TAUGHT", grade_vals)
     subgroup("F4. School has AI policy, by grade band", "AI_POLICY", {"Yes"},
              pres_denom, "Has AI policy", "GRADES_TAUGHT", grade_vals)

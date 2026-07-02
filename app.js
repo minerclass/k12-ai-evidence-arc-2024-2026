@@ -16,8 +16,8 @@ const overviewMarkup = `
       <p class="wave-value">68.9%</p>
       <p class="wave-description">reported using AI tools during the 2025-26 school year.</p>
       <ul class="wave-list">
-        <li><strong>72.5%</strong><span>said AI makes teachers' jobs easier.</span></li>
-        <li><strong>61.9%</strong><span>said AI makes students' learning harder.</span></li>
+        <li><strong>72.5%</strong><span>expected teachers' AI use to make teaching easier.</span></li>
+        <li><strong>61.9%</strong><span>expected students' AI use to make teaching harder.</span></li>
         <li><strong>12.5%</strong><span>reported clear-policy coverage.</span></li>
       </ul>
       <p class="wave-note">Public file: 2,012 cases. AI-use item valid n = 1,985.</p>
@@ -75,8 +75,9 @@ function gradeMarkup() {
   return `
     <div class="comparison-view">
       <p class="chart-intro">
-        Reported use rises by grade band within both surveys. Because the questions differ,
-        the two columns should be read as parallel snapshots, not as percentage-point change.
+        Point estimates are higher in later grade bands within both surveys. Because the questions
+        and grade-band definitions differ, the columns are parallel descriptive snapshots,
+        not percentage-point change; this visual does not test subgroup significance.
       </p>
       <div class="comparison-grid">
         <section class="comparison-column">

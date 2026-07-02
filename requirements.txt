@@ -1,0 +1,2 @@
+# The published analysis scripts use only the Python standard library.
+# Python 3.11 or newer is recommended.

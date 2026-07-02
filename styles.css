@@ -806,6 +806,11 @@ footer p {
     padding: 28px 0;
   }
 
+  .source-list a {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
   footer {
     display: block;
   }
