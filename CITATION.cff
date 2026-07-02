@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this analysis companion, please cite it using the metadata below."
+title: "K-12 Teacher AI Evidence Arc, 2024-2026"
+type: software
+authors:
+  - family-names: "Miner"
+    given-names: "Micah"
+version: 0.1.0
+date-released: 2026-07-02
+repository-code: "https://github.com/minerclass/k12-ai-evidence-arc-2024-2026"
+url: "https://minerclass.github.io/k12-ai-evidence-arc-2024-2026/"
+keywords:
+  - K-12 education
+  - artificial intelligence
+  - teacher survey
+  - secondary data analysis
+  - pedagogical friction
+abstract: >-
+  Proposal-stage reproducible analysis companion presenting weighted descriptive
+  estimates from public-use RAND American Educator Panel files and published NCES
+  School Pulse Panel aggregates. No dissertation participant data or respondent-level
+  survey microdata are included.
