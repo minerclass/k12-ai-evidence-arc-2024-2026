@@ -6,7 +6,7 @@ license: MIT
 authors:
   - family-names: "Miner"
     given-names: "Micah J."
-    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add your real ORCID before Zenodo deposit
+    orcid: "https://orcid.org/0009-0002-9739-6955"
 version: 0.1.0
 date-released: 2026-07-02
 repository-code: "https://github.com/minerclass/k12-ai-evidence-arc-2024-2026"
