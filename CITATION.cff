@@ -2,9 +2,11 @@ cff-version: 1.2.0
 message: "If you use this analysis companion, please cite it using the metadata below."
 title: "K-12 Teacher AI Evidence Arc, 2024-2026"
 type: software
+license: MIT
 authors:
   - family-names: "Miner"
-    given-names: "Micah"
+    given-names: "Micah J."
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add your real ORCID before Zenodo deposit
 version: 0.1.0
 date-released: 2026-07-02
 repository-code: "https://github.com/minerclass/k12-ai-evidence-arc-2024-2026"

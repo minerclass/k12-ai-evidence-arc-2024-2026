@@ -47,6 +47,22 @@ workbook, `Poverty` sheet, item `AI5_y`, response `Yes`:
 The public NCES workbook does not release subgroup respondent counts, so valid `n`
 is not reported for those rows.
 
+### Second-tool verification
+
+The three RAND/Gallup headline estimates were independently reproduced in a second
+tool, jamovi 2.7 (R 4.5, CRAN snapshot 2025-05-25), applying `PORTAL_WEIGHT` and the
+same item-specific valid denominators:
+
+- AI adoption (`AI_USER` = Yes): 68.9% (`n = 1,985`);
+- teachers' AI use expected to make teaching easier (`AI_EASY_DIFF_TEACHER`): 72.5% (`n = 1,984`);
+- students' AI use expected to make teaching harder (`AI_EASY_DIFF_STUDENT`): 61.9% (`n = 1,986`).
+
+All three matched the Python results and the audit-trail denominators to the reported
+precision. The verification script is `analysis/verify_headline_jamovi_Rj.R`; it runs
+inside jamovi via the Rj module or as plain R. The NCES School Pulse Panel figures are
+published estimates traced to the workbook rather than recomputed, because that release
+provides aggregate estimates rather than respondent-level microdata.
+
 ## Statistical boundary
 
 RAND/Gallup estimates use `PORTAL_WEIGHT` and item-specific valid denominators.
