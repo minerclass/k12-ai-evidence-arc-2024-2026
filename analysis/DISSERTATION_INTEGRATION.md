@@ -60,13 +60,13 @@ and Winter 2026 sources are Gallup-sponsored RAND American Teacher Panel surveys
 
 ## Chapters 4-5
 
-Do not pre-position these percentages as findings from the bounded case.
+Do not pre-position these percentages as findings from the planned participant study.
 
 After primary data have been collected and analyzed, selected indicators may be included in
 joint displays to examine:
 
 - **convergence**: participant accounts resemble a national structural pattern;
-- **divergence**: the bounded case differs from the national context;
+- **divergence**: the participant evidence differs from the national context;
 - **expansion**: interviews explain how or why a national pattern is experienced locally;
 - **silence**: one evidence stream addresses an issue the other does not.
 
@@ -88,4 +88,4 @@ longitudinal trend. Sources: RAND AIRS (`AIR0424T`), Gallup-sponsored RAND ATP
 ## Proposal-Stage Boundary
 
 This companion presents secondary-source context only. It contains no dissertation
-participant data and makes no claims about results from the planned bounded case.
+participant data and makes no claims about results from the planned participant study.
