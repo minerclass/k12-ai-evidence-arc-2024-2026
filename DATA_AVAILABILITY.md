@@ -39,7 +39,7 @@ published.
 ## Dissertation use boundary
 
 These secondary datasets provide national **structural context** for the dissertation, not
-direct measures of pedagogical friction and not evidence from within the bounded case. In
+direct measures of pedagogical friction and not evidence from the planned participant study. In
 particular, the Fall 2025 `GAL1025T` teaching-impact items ask whether teachers' or students'
 AI use is expected to make the **job of teaching** easier or harder; they do not measure
 student learning, authorship, cognitive outsourcing, or unproductive success. Cross-wave
