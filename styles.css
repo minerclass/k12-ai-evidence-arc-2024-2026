@@ -848,3 +848,12 @@ footer p {
     scroll-behavior: auto;
   }
 }
+
+/* Citation line in the footer: this companion is cited as Miner (2026a) from the
+   proposal and from three sibling public artifacts, so the DOI must be visible here. */
+footer .cite-line {
+  max-width: 68ch;
+  margin-inline: auto;
+  text-wrap: pretty;
+}
+footer .cite-line em { font-style: italic; }

@@ -63,6 +63,25 @@ The `analysis/*.py` scripts recompute every Gallup/ATP value from the public-use
 do not contain any microdata. The NCES School Pulse Panel equity values are openly downloadable
 aggregate estimates.
 
+## The Two Data Files
+
+The repository publishes two aggregate CSVs with different jobs. They overlap, but neither is
+a subset of the other:
+
+- `data/dissertation_table1_claims.csv` -- the **proposal Table 1 crosswalk**: 21 claims, each
+  with its variable name, numerator rule, denominator definition, valid n, approximate standard
+  error, research-question mapping, and interpretive caution. Every percentage in it matches
+  Table 1 of the submitted Chapters 1-3.
+- `data/evidence_arc_metrics.csv` -- the **visualization series**: 37 rows driving the page,
+  including grade-band and task-level breakdowns that Table 1 does not carry.
+
+Four Table 1 claims are deliberately not part of the visualization series, so they appear in the
+crosswalk only: *any school AI policy present* (34.5%, Fall 2025), *student AI-misuse policy
+present* (17.2%, Winter 2026), *does not know whether a misuse policy exists* (37.1%, Winter
+2026), and *high-quality AI tools available overall* (75.8%, Spring 2025). The equity view shows
+the two subgroup values (80.8% and 71.3%) without that overall baseline; read the crosswalk
+alongside the page when the baseline matters.
+
 ## Data Boundary
 
 Only aggregated, weighted percentages and valid unweighted denominators are published here.
@@ -91,18 +110,27 @@ definitions. Consult `analysis/METHODS_AND_LIMITATIONS.md` and
 
 ## Citation
 
-Suggested proposal-stage citation:
+This companion is archived on Zenodo and is cited in the dissertation proposal as
+**Miner (2026a)**. Use the archived version:
 
-> Miner, M. (2026). *K-12 teacher AI evidence arc, 2024-2026*
-> [Data analysis, code, and interactive visualization]. GitHub.
-> https://minerclass.github.io/k12-ai-evidence-arc-2024-2026/
+> Miner, M. J. (2026a). *K-12 teacher AI evidence arc, 2024-2026* (Version 0.1.0)
+> [Data analysis, code, and interactive visualization]. Zenodo.
+> https://doi.org/10.5281/zenodo.21152544
 
-Machine-readable citation metadata are provided in `CITATION.cff`. A versioned
-Zenodo DOI may replace the GitHub-only citation after the reviewed proposal-stage
-release is archived.
+Machine-readable citation metadata are provided in `CITATION.cff`.
+
+The companion article is cited separately as **Miner (2026b)**: *When the output looks like
+learning*, in *i.e.: inquiry in education*, 18(1), Article 4. Some older sibling repositories
+state this 2026a/2026b pairing in reverse; the ordering above matches the submitted
+Chapters 1-3.
 
 ## Release and License Status
 
-The planned proposal-stage release is `v0.1.0-proposal`. See `CHANGELOG.md` and
-`ZENODO_RELEASE_CHECKLIST.md`. No reuse license is currently granted; a license
-must be selected before the Zenodo record is published.
+The proposal-stage release is **version 0.1.0**, archived on Zenodo on 2026-07-03 under the
+**MIT License** (see `LICENSE` and `CITATION.cff`). See `CHANGELOG.md` for what that release
+corrected and `ZENODO_RELEASE_CHECKLIST.md` for the procedure used.
+
+Note for maintainers: this repository has no `v0.1.0` git tag. The Zenodo checklist asks for a
+"related identifier: exact reviewed GitHub commit or release URL", so the commit that was
+archived should be tagged to close that traceability gap. The only current tag is
+`proposal-defense`.
