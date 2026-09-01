@@ -1,22 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-mjm-ground="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Social cards · K-12 AI Evidence Arc</title>
+<link rel="stylesheet" href="https://minerclass.github.io/tokens.css">
 <style>
-  body{margin:0;background:#f4f3ee;color:#171b1d;font-family:"Segoe UI",Arial,sans-serif;line-height:1.5;}
+    /* This page had no :root of its own. Ground, ink and muted now come from
+       the shared ecosystem tokens with the page's pre-adoption values as
+       fallbacks; the teal accents stay local. */
+    :root {
+      --mjm-accent: var(--mjm-teal, #006b70);
+    }
+  body{margin:0;background:var(--mjm-bg,#f4f3ee);color:var(--mjm-ink,#171b1d);font-family:"Segoe UI",Arial,sans-serif;line-height:1.5;}
   .wrap{max-width:1160px;margin:0 auto;padding:40px 24px 80px;}
   h1{font-family:Georgia,serif;font-size:2rem;margin:0 0 6px;}
-  p.lede{color:#566166;max-width:70ch;margin:0 0 8px;}
-  .note{background:#fff;border-left:5px solid #a96f00;padding:14px 18px;margin:18px 0 34px;max-width:80ch;font-size:.95rem;}
+  p.lede{color:var(--mjm-muted,#566166);max-width:70ch;margin:0 0 8px;}
+  .note{background:var(--mjm-surface,#fff);border-left:5px solid #a96f00;padding:14px 18px;margin:18px 0 34px;max-width:80ch;font-size:.95rem;}
   .card-block{margin:0 0 56px;}
   .card-head{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:14px;}
   .card-head h2{font-family:Georgia,serif;font-size:1.35rem;margin:0;}
-  .card-head span{color:#566166;font-size:.9rem;}
-  button{min-height:42px;padding:0 18px;border:2px solid #006b70;border-radius:5px;background:#fff;color:#004f54;font:inherit;font-weight:700;cursor:pointer;}
+  .card-head span{color:var(--mjm-muted,#566166);font-size:.9rem;}
+  button{min-height:42px;padding:0 18px;border:2px solid #006b70;border-radius:5px;background:var(--mjm-surface,#fff);color:#004f54;font:inherit;font-weight:700;cursor:pointer;}
   button:hover{background:#006b70;color:#fff;}
-  .stage{background:#fff;border:1px solid #cbd2d4;border-radius:8px;padding:16px;overflow:auto;}
+  .stage{background:var(--mjm-surface,#fff);border:1px solid #cbd2d4;border-radius:8px;padding:16px;overflow:auto;}
   .stage svg{display:block;height:auto;max-width:100%;}
   .square svg{width:540px;}
   .wide svg{width:100%;}
