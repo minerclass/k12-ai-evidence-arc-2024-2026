@@ -857,3 +857,21 @@ footer .cite-line {
   text-wrap: pretty;
 }
 footer .cite-line em { font-style: italic; }
+
+/* Ecosystem link line. The footer is a non-wrapping flex row, so a fifth
+   paragraph would squeeze the citation; allow wrapping and give this line its
+   own full-width row. */
+footer {
+  flex-wrap: wrap;
+}
+
+.ecosystem-line {
+  flex-basis: 100%;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 6px !important;
+}
+
+.ecosystem-line a {
+  color: inherit;
+}
