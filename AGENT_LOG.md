@@ -6,6 +6,19 @@ or tokens.
 
 ---
 
+## 2026-09-01 - Adopt the paper ground
+
+Ground, surface, ink, and muted come from the shared tokens with pre-adoption fallbacks;
+the teal, red, and ochre accents stay local.
+
+**Checked before adopting.** Moving from a pure-white ground to the shared warm paper
+lowers every accent slightly (`--teal` 6.29 to 5.51, `--focus` 5.22 to 4.57). All stay
+above 4.5, so nothing needed lifting.
+
+**Verified.** 147 elements probed: **zero** failures; tightest pair 5.43.
+
+---
+
 ## 2026-08-31 - Link back into the research ecosystem
 
 **Problem.** A design-cohesion review across 31 repositories found this repo to be one of
